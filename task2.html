@@ -7,138 +7,137 @@
 </head>
 <body>
   <!-- header---------- -->
-  
-  <div style="background-color: rgb(225, 225, 247);  margin: 4px; padding: 5px; border-radius: 10px;" >
+    <div style="background-color: rgb(225, 225, 247);  margin: 4px; padding: 5px; border-radius: 10px;" >
     <center>
-      <img src="images/tsrtc_logo.png" alt="image" style="height: 50px;">
-    <h2 style="text-transform:uppercase; color: blue;">Telangana State Road Transport Corporation</h2>
-    <h2>GENERAL BUS PASS APPLICATION</h2>
-  </center>
-  </div>
-
-<!-- applicant details-------- -->
- 
-  <div>
-    <fieldset style="border: 0.1px solid rgb(180, 180, 179); background-color: rgb(240, 240, 240); height: 230px; margin: 10px; border-radius: 5px;">
-      <legend style="background-color: rgb(61, 136, 212); color: white; padding: 5px; border-radius: 5px;">Applicant Details</legend>
-      <pre><label for="">Name <span style="color: red;">*</span> </label> <input type="text" maxlength="20">                   <label for="">Father's / Guardian's Name <span style="color: red;">*</span></label>  <input type="text" required>
-        <span style="color: red;">(Maximum characters: 20)</span>  
-
-<label for="">Date of birth <span style="color: red;">*</span></label>  <input type="date">                  <label for="">Gender </label><input type="radio" value="male" id="male" name="Gender" required>Male<input type="radio" value="female" id="female" name="Gender">Female
-
-<label for="">Age as on :</label> <input type="number" max="4" style="width: 22px;"><label for="">Year(s)</label><input type="number" max="4" required style="width: 22px;"><label for="">Month(s)</label><input type="number" max="4" style="width: 22px;"><label for="">Day(s)</label>     <label for="">Aadhaar No:</label> <input type="number">
-
-<label for="">WhatsApp No <span style="color: red;">*</span> </label> <input type="number" required>            <label for="">E-mail id <span style="color: red;">*</span> </label> <input type="email" required>
-
-<label for="">Photo <span style="color: red;">*</span> </label><input type="file" required>
-
-          
-      </pre>
-    </fieldset>
-  </div>
-  
-  <!-- Residential address details -->
-    <div>
-      <fieldset style="border: 0.1px solid rgb(180, 180, 179); background-color: rgb(240, 240, 240); height: 220px; margin: 10px; border-radius: 5px;" >
-        <legend style="background-color: rgb(61, 136, 212); color: white; padding: 5px; border-radius: 5px; ">Residential Address Details</legend>
-        <div>
-        <label for="">Applicants address <span style="color: red;">*</span> </label> <textarea name="comment" id=""></textarea><br><br>    
-            <label for="">Mandal <span style="color: red;">*</span> </label>
-            <select name="mandal" id="" required>
-              <option value="Bhadrachalam">Bhadrachalam</option>
-              <option value="Manuguru">Manuguru</option>
-              <option value="Palvancha">Palvancha</option>
-              <option value="Ichoda">Ichoda</option>
-              <option value="Sirikonda">Sirikonda</option>
-            </select><br><br>
-            <label for="">Pincode <span style="color: red;">*</span> </label>
-            <input type="number" max="6" required style="width: 60px;"><br><br>
-            <label for="">District <span style="color: red;">*</span> </label>
-            <select name="district" id="" required>
-              <option value="Adilabad">Adilabad</option>
-              <option value="Nizamabad">Nizamabad</option>
-              <option value="Hyderabad">Hyderabd</option>
-              <option value="Hanmakonda">Hanmakonda</option>
-              <option value="Warangal">Warangal</option>
-              <option value="Jagityal">Jagityal</option>
-            </select><br><br>
-            <label for="">Village <span style="color: red;">*</span> </label>
-            <select name="village" id="" required>
-              <option value="utnur">utnur</option>
-              <option value="Bela">Bela</option>
-              <option value="Ichoda">Ichoda</option>
-              <option value="Indravelly">Indravelly</option>
-              <option value="Velgatoor">Velgatoor</option>
-              <option value="Dharmapuri">Dharmapuri</option>
-            </select>
-      </div>
-    </fieldset>
-    </div>
-
-    <!-- -pass type details------ -->
-    <div>
-      <fieldset style="border: 0.1px solid rgb(180, 180, 179); background-color: rgb(240, 240, 240); height: 100px; margin: 10px; border-radius: 5px;"> 
-       <legend style="background-color: rgb(61, 136, 212); color: white; padding: 5px; border-radius: 5px;">Pass Type Details</legend><br>
-       <div>
-         <label for="">City <span style="color: red;">*</span> </label>
-         <select name="City" id="" required>
-           <option value="utnur">Hyderabad</option>
-         </select><br><br>
-         <label for="">Pass Type <span style="color: red;">*</span> </label>
-         <select name="passtype" id="" required>
-           <option value="utnur">----Select----</option>
-           <option value="Bela">Regular</option>
-           <option value="Ichoda">distance</option>
-           <option value="Indravelly">others</option>
-         </select>
-       </div>
-     </fieldset>
-   </div>
-
-  <!-----payment type  details------>
-    <div>
-      <fieldset style="border: 0.1px solid rgb(180, 180, 179); background-color: rgb(240, 240, 240); height: 140px; margin: 10px; border-radius: 5px;"> 
-       <legend style="background-color: rgb(61, 136, 212); color: white; padding: 5px; border-radius: 5px;">Mode of Payment & Pass Collection</legend>
-       <div style="padding: 1%; margin-bottom: 1px;">
-         <label for="">Payment Mode <span style="color: red;">*</span> </label>
-         <select name="village" id="" required>
-           <option value="utnur">Select payment mode</option>
-           <option value="Bela">Payment at counter</option>
-         </select><br><br>
-         <label for="">Pass Delivery Mode <span style="color: red;">*</span> </label>
-         <select name="passtype" id="" required>
-           <option value="utnur">Select Pass Delivery Mode</option>
-           <option value="Bela">At Counter</option>
-         </select><br><br>
-         <label for="">Center at which you want to Collect Pass <span style="color: red;">*</span> </label>
-         <select name="passtype" id="" required>
-           <option value="utnur">----Select----</option>
-           <option value="Bela">RTC Abids</option>
-           <option value="Bela">RTC Afzalgunj</option>
-           <option value="Bela">RTC Aramnagar</option>
-           <option value="Bela">RTC Balnagar</option>
-           <option value="Bela">RTC Borabanda</option>
-         </select>
-       </div>
-     </fieldset>
-   </div>
-
-   <!-- footer---------- -->
-   <footer>
-    <center>
-      <pre>
-        <img src="images/capcha.png" alt="image" style="width: 250px;">
-
-        <input type="text" maxlength="6">
-        
-        <button type="submit" style="color: white; background-color: rgb(248, 49, 116); height: 30px; width: 65px; border-style: none; font-weight: 900;">submit</button>
-        
-        <br>
-      </pre>
-      
+        <img src="images/tsrtc_logo.png" alt="image" style="height: 50px;">
+      <h2 style="text-transform:uppercase; color: blue;">Telangana State Road Transport Corporation</h2>
+      <h2>GENERAL BUS PASS APPLICATION</h2>
     </center>
-   </footer>
+    </div>
   
+  <!-- applicant details-------- -->
+  <form action="">
+    <div>
+      <fieldset style="border: 0.1px solid rgb(180, 180, 179); background-color: rgb(240, 240, 240); height: 230px; margin: 10px; border-radius: 5px;">
+        <legend style="background-color: rgb(61, 136, 212); color: white; padding: 5px; border-radius: 5px;">Applicant Details</legend>
+        <pre><label for="name">Name <span style="color: red;">*</span> </label> <input type="text" id="name" maxlength="20" required>                   <label for="Fname">Father's / Guardian's Name <span style="color: red;">*</span></label>  <input type="text" id="Fname" required>
+        <span style="color: red;">(Maximum characters: 20)</span>  
+        
+<label for="">Gender </label><input type="radio" value="male" id="male" name="Gender" required>Male<input type="radio" value="female" id="female" name="Gender">Female                                                <label for="dob">Date of birth <span style="color: red;">*</span></label>  <input type="date" id="dob" required>                      
 
+<label for="age">Age as on :</label> <input type="number" id="age" max="4" required style="width: 22px;"><label for="year">Year(s)</label><input type="number" id="year" max="4" required style="width: 22px;"><label for="mnth">Month(s)</label><input type="number" id="mnth" required max="4" style="width: 22px;"><label for="day">Day(s)</label>                       <label for="day">Aadhaar No:</label> <input type="number">
+  
+<label for="num">WhatsApp No <span style="color: red;">*</span> </label> <input type="number" id="num" required>                             <label for="mail">E-mail id <span style="color: red;">*</span> </label> <input type="email" id="mail" required>
+  
+<label for="upldFle">Photo <span style="color: red;">*</span> </label><input type="file" id="upldFle" required>
+  
+        
+        </pre>
+      </fieldset>
+    </div>
+    
+    <!-- Residential address details -->
+      <div>
+        <fieldset style="border: 0.1px solid rgb(180, 180, 179); background-color: rgb(240, 240, 240); height: 220px; margin: 10px; border-radius: 5px;" >
+          <legend style="background-color: rgb(61, 136, 212); color: white; padding: 5px; border-radius: 5px; ">Residential Address Details</legend>
+          <div>
+          <label for="">Applicants address <span style="color: red;">*</span> </label> <textarea name="comment" id="" required></textarea><br><br>    
+              <label for="mdl">Mandal <span style="color: red;">*</span> </label>
+              <select name="mandal" id="mdl" required>
+                <option value="select">----Select----</option>
+                <option value="Manuguru">Bhadrachalam</option>
+                <option value="Manuguru">Manuguru</option>
+                <option value="Palvancha">Palvancha</option>
+                <option value="Ichoda">Ichoda</option>
+                <option value="Sirikonda">Sirikonda</option>
+              </select><br><br>
+              <label for="pinC">Pincode <span style="color: red;">*</span> </label>
+              <input type="number" id="pinC" max="6" required style="width: 60px;"><br><br>
+              <label for="dist">District <span style="color: red;">*</span> </label>
+              <select name="district" id="dist" required>
+                <option value="Adilabad">----Select----</option>
+                <option value="Adilabad">Adilabad</option>
+                <option value="Nizamabad">Nizamabad</option>
+                <option value="Hyderabad">Hyderabd</option>
+                <option value="Hanmakonda">Hanmakonda</option>
+                <option value="Warangal">Warangal</option>
+                <option value="Jagityal">Jagityal</option>
+              </select><br><br>
+              <label for="vilage">Village <span style="color: red;">*</span> </label>
+              <select name="village" id="vilage" required>
+                <option value="utnur">----Select----</option>
+                <option value="utnur">utnur</option>
+                <option value="Bela">Bela</option>
+                <option value="Ichoda">Ichoda</option>
+                <option value="Indravelly">Indravelly</option>
+                <option value="Velgatoor">Velgatoor</option>
+                <option value="Dharmapuri">Dharmapuri</option>
+              </select>
+        </div>
+      </fieldset>
+      </div>
+  
+      <!-- -pass type details------ -->
+      <div>
+        <fieldset style="border: 0.1px solid rgb(180, 180, 179); background-color: rgb(240, 240, 240); height: 100px; margin: 10px; border-radius: 5px;"> 
+         <legend style="background-color: rgb(61, 136, 212); color: white; padding: 5px; border-radius: 5px;">Pass Type Details</legend><br>
+         <div>
+           <label for="city">City <span style="color: red;">*</span> </label>
+           <select name="City" id="city" required>
+             <option value="utnur">Hyderabad</option>
+           </select><br><br>
+           <label for="passT">Pass Type <span style="color: red;">*</span> </label>
+           <select name="passtype" id="passT" required>
+             <option value="utnur">----Select----</option>
+             <option value="Bela">Regular</option>
+             <option value="Ichoda">distance</option>
+             <option value="Indravelly">others</option>
+           </select>
+         </div>
+       </fieldset>
+     </div>
+  
+    <!-----payment type  details------>
+      <div>
+        <fieldset style="border: 0.1px solid rgb(180, 180, 179); background-color: rgb(240, 240, 240); height: 140px; margin: 10px; border-radius: 5px;"> 
+         <legend style="background-color: rgb(61, 136, 212); color: white; padding: 5px; border-radius: 5px;">Mode of Payment & Pass Collection</legend>
+         <div style="padding: 1%; margin-bottom: 1px;">
+           <label for="village">Payment Mode <span style="color: red;">*</span> </label>
+           <select name="village" id="village" required>
+             <option value="utnur">Select payment mode</option>
+             <option value="Bela">Payment at counter</option>
+           </select><br><br>
+           <label for="place">Pass Delivery Mode <span style="color: red;">*</span> </label>
+           <select name="passtype" id="place" required>
+             <option value="utnur">Select Pass Delivery Mode</option>
+             <option value="Bela">At Counter</option>
+           </select><br><br>
+           <label for="center">Center at which you want to Collect Pass <span style="color: red;">*</span> </label>
+           <select name="passtype" id="center" required>
+             <option value="utnur">----Select----</option>
+             <option value="Bela">RTC Abids</option>
+             <option value="Bela">RTC Afzalgunj</option>
+             <option value="Bela">RTC Aramnagar</option>
+             <option value="Bela">RTC Balnagar</option>
+             <option value="Bela">RTC Borabanda</option>
+           </select>
+         </div>
+       </fieldset>
+     </div>
+  
+     <!-- footer---------- -->
+     <footer>
+      <center>
+        <pre>
+          <img src="images/capcha.png" alt="image" style="width: 250px;">
+  
+          <input type="text" maxlength="6">
+  
+          <input type="submit" value="Submit" required style="color: white; background-color: rgb(248, 49, 116); height: 30px; width: 65px; border-style: none; font-weight: 900;">
+          <br>
+        </pre>
+      </center>
+     </footer>
+  </form>
 </body>
 </html>
